@@ -1,0 +1,25 @@
+#  REGISTRATION FORM
+REGISTRATION FORM
+
+name = input("Enter Your Full Name:")
+gender = input("Enter Your Gender (male or female): ").strip().lower()
+weight = float(input("Enter Your weight: "))
+height = float(input("Enter Your height in feet: "))
+relative = input("Do you have any family member (yes or no): ").strip().lower()
+
+if gender == "male":
+    if weight >= 65 and height >= 5.8 and relative == "yes":
+        print("Congratulations!",name,"you are Eligible for Uganda Air force")
+    else:
+        education = input("Sorry you do not fulfill the requirements. Enter your qualification: ")
+        print("Wait for the response")
+
+elif gender == "female":
+    if weight >= 40 and height >= 5.2 and relative == "yes":
+        print("Congratulations!",name,"you are Eligible for Uganda Air force")
+    else:
+        education = input("Sorry you do not fulfill the requirements. Enter your qualification: ")
+        print("Wait for the response")
+
+else:
+    print("Try again")
